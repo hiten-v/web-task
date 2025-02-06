@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTask</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        body
+        {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(219, 221, 224);
+        }
+        header
+        {
+            border-bottom-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            background-color: rgb(116, 152, 80);
+            padding: 3rem;
+            text-align: center;
+            color: white;
+        }
+        header div a
+        {
+            margin-right: 2rem;
+            transition: ease-in 0.3s;
+            padding: 0.3rem;
+        }
+        header div a:hover
+        {
+            color: rgb(116, 152, 80);
+            background-color: beige;
+            border: 0.1rem solid beige;
+            border-radius: 0.5rem;
+        }
+        footer
+        {
+            padding: 3rem;
+            margin-top: 3rem;
+            text-align: center;
+            color: antiquewhite;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            background-color: rgb(48, 55, 61);
+        }
+        footer a
+        {
+            color: rgb(116, 152, 80);
+        }
+        .container
+        {
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 21rem;
+            transition: 1s;
+        }
+        .container h3
+        {
+            color: rgb(116, 152, 80);
+        }
+        .container div
+        {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+            border-radius: 0.5rem;
+            padding: 2rem 1rem 2rem 1rem;
+            margin: 2rem;
+            transition: ease-in 0.3s;
+        }
+        .container div:hover
+        {
+            box-shadow: 0.5rem 0.5rem grey;
+        }
+        @media(max-width:850px)
+        {
+            .container
+            {
+                column-gap: 15rem;
+            }
+        }
+        @media(max-width:720px)
+        {
+            .container
+            {
+                column-gap: 10rem;
+            }
+        }
+        @media(max-width:580px)
+        {
+            .container
+            {
+                column-gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Your Website Task</h1>
+        <br>
+        <div>
+            <a>Home</a>
+            <a>About</a>
+            <a>Contact</a>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            <h3>About CSS</h3>
+            <br>
+            Cascading Style Sheets (CSS) allow you to style and layout your web pages, adding colors, spacing and more
+        </div>
+        <div id="box">
+            <h3>BOX Model</h3>
+            <br>
+            The CSS box model describes the rectangular boxes generated for elements. It includes margins, borders, padding and the actual content.
+        </div>
+        <div>
+            <h3>Responsive Design</h3>
+            <br>
+            Responsive design ensures your webpage looks great on all devices, from desktop to mobile phones.
+        </div>
+    </div>
+    <footer>
+        Created by Hiten Vaid | Follow us on:&nbsp;&nbsp;&nbsp;
+        <a>Instagram</a>&nbsp;&nbsp;|
+        <a>Twitter</a>&nbsp;&nbsp;|
+        <a>Linkdin</a>
+    </footer>
+</body>
+</html>
