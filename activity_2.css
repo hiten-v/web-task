@@ -7,6 +7,7 @@ body
 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(219, 221, 224);
+    transition: ease-in 0.2s;
 }
 header
 {
@@ -16,11 +17,12 @@ header
     padding: 3rem;
     text-align: center;
     color: white;
+    transition: ease-in 0.2s;
 }
 header div a
 {
     margin-right: 2rem;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.1s;
     padding: 0.3rem;
 }
 header div a:hover
@@ -43,6 +45,13 @@ footer
 footer a
 {
     color: rgb(116, 152, 80);
+    padding: 0.3rem;
+    transition: ease-in 0.1s;
+}
+footer a:hover
+{
+   border: 0.1rem solid beige;
+   border-radius: 0.5rem;
 }
 .container
 {
@@ -68,18 +77,53 @@ footer a
 {
     box-shadow: 0.5rem 0.5rem grey;
 }
+button img
+{
+    height: 2rem;
+}
+#outer_btn
+{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#dark
+{
+    background-color: rgb(116, 152, 80);
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    transition: ease-in 0.5s;
+}
+#light
+{
+    background-color: rgb(50, 62, 37);
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+    transition: ease-in 0.5s;
+    display: none;
+}
+#dark:hover
+{
+    background-color: rgb(51, 49, 49);
+}
+#light:hover
+{
+    background-color: rgb(204, 201, 201);
+}
 @media(max-width:850px)
 {
     .container
     {
-        column-gap: 15rem;
+        column-gap: 11rem;
     }
 }
 @media(max-width:720px)
 {
     .container
     {
-        column-gap: 10rem;
+        column-gap: 7rem;
     }
 }
 @media(max-width:580px)
@@ -95,7 +139,7 @@ footer a
     {
         display: block;
     }
-    header div
+    header #navbar
     {
         display: flex;
         flex-direction: column;
