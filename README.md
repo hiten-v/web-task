@@ -1,1 +1,1 @@
-A web task mini-homepage with responsive design<br> using HTML and CSS
+A web task mini-homepage with responsive design<br> using HTML, CSS and JS
