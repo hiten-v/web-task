@@ -32,7 +32,29 @@ header div a:hover
     border: 0.1rem solid beige;
     border-radius: 0.5rem;
 }
-footer
+#footer2
+{
+    display: none;
+    padding: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: antiquewhite;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: rgb(48, 55, 61);
+}
+#footer2 a
+{
+    color: rgb(116, 152, 80);
+    padding: 0.3rem;
+    transition: ease-in 0.1s;
+}
+#footer2 a:hover
+{
+    border: 0.1rem solid beige;
+    border-radius: 0.5rem;
+}
+#footer
 {
     padding: 3rem;
     margin-top: 3rem;
@@ -42,13 +64,17 @@ footer
     border-top-right-radius: 1rem;
     background-color: rgb(48, 55, 61);
 }
-footer a
+#footer div
+{
+    display: inline;
+}
+#footer a
 {
     color: rgb(116, 152, 80);
     padding: 0.3rem;
     transition: ease-in 0.1s;
 }
-footer a:hover
+#footer a:hover
 {
    border: 0.1rem solid beige;
    border-radius: 0.5rem;
@@ -126,6 +152,14 @@ button img
         column-gap: 7rem;
     }
 }
+@media(max-width:610px)
+{
+    #footer div
+    {
+        display: block;
+        margin-top: 0.8rem;
+    }
+}
 @media(max-width:580px)
 {
     .container
@@ -145,7 +179,19 @@ button img
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 0.5rem;
         padding: 0.2rem;
+    }
+    header #navbar a
+    {
+        margin-right: 0;
+        margin-bottom: 0.8rem;
+    }
+    #footer
+    {
+        display: none;
+    }
+    #footer2
+    {
+        display: block;
     }
 }
