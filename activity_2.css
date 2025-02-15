@@ -2,6 +2,7 @@
 {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body
 {
@@ -44,11 +45,15 @@ header div a:hover
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     background-color: rgb(48, 55, 61);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #footer2 a
 {
     color: rgb(116, 152, 80);
     padding: 0.3rem;
+    margin-bottom: 0.5rem;
     transition: ease-in 0.1s;
 }
 #footer2 a:hover
@@ -194,6 +199,6 @@ button img
     }
     #footer2
     {
-        display: block;
+        display: flex;
     }
 }
