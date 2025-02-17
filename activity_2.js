@@ -73,7 +73,6 @@ window.addEventListener('DOMContentLoaded', () => {
 function check()
 {
     let footer1=document.querySelector('#footer');
-    let footer2=document.querySelector('#footer2');
     let contact=document.querySelector('#contact');
     let cc1 = window.getComputedStyle(footer1).getPropertyValue('display');
     if(cc1==='none')
@@ -83,5 +82,33 @@ function check()
     else
     {
         contact.setAttribute('href','#footer');
+    }
+}
+function about()
+{
+    let footer1=document.querySelector('#footer');
+    let about=document.querySelector("#nav_about");
+    let cc1 = window.getComputedStyle(footer1).getPropertyValue('display');
+    if(cc1==='none')
+    {
+        about.setAttribute('href','#about2');
+        let sp=document.querySelector("#about2 span");
+        sp.style.backgroundColor='rgb(116, 152, 80)';
+        sp.style.padding='0.3rem';
+        sp.style.borderRadius='0.5rem';
+        setTimeout(()=>{
+            sp.style.backgroundColor='';
+        },2000);
+    }
+    else
+    {
+        about.setAttribute('href','#about1');
+        let sp=document.querySelector("#about1 span");
+        sp.style.backgroundColor='rgb(116, 152, 80)';
+        sp.style.padding='0.3rem';
+        sp.style.borderRadius='0.5rem';
+        setTimeout(()=>{
+            sp.style.backgroundColor='';
+        },2000);
     }
 }
