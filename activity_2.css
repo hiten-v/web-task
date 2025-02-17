@@ -20,19 +20,26 @@ header
     color: white;
     transition: ease-in 0.2s;
 }
-header div a
+header #navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+#navbar a
 {
     text-decoration: none;
     color: white;
-    margin-right: 2rem;
     transition: ease-in 0.1s;
     padding: 0.3rem;
+    border: 0.1rem solid transparent;
 }
-header div a:hover
+#navbar a:hover
 {
     color: rgb(116, 152, 80);
     background-color: beige;
-    border: 0.1rem solid beige;
+    border-color: beige;
     border-radius: 0.5rem;
 }
 #footer2
@@ -55,10 +62,12 @@ header div a:hover
     padding: 0.3rem;
     margin-bottom: 0.5rem;
     transition: ease-in 0.1s;
+    box-sizing: border-box;
+    border: 0.1rem solid transparent;
 }
 #footer2 a:hover
 {
-    border: 0.1rem solid beige;
+    border-color: beige;
     border-radius: 0.5rem;
 }
 #footer
@@ -71,20 +80,30 @@ header div a:hover
     border-top-right-radius: 1rem;
     background-color: rgb(48, 55, 61);
 }
-#footer div
+#footer_links
 {
     display: inline;
+    box-sizing: border-box;
 }
-#footer a
+#footer_links a
 {
     color: rgb(116, 152, 80);
     padding: 0.3rem;
     transition: ease-in 0.1s;
+    border: 0.1rem solid transparent;
 }
-#footer a:hover
+#footer_links a:hover
 {
-   border: 0.1rem solid beige;
+   border-color:beige;
    border-radius: 0.5rem;
+}
+#about1
+{
+    margin-bottom: 1rem;
+}
+span
+{
+    transition: all 0.5s ease-in 0.5s;
 }
 .container
 {
@@ -182,10 +201,10 @@ button img
     }
     header #navbar
     {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 0;
         padding: 0.2rem;
     }
     header #navbar a
