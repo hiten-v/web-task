@@ -112,3 +112,22 @@ function about()
         },2000);
     }
 }
+
+function revealOnScroll() 
+{
+    let boxes = document.querySelectorAll('.box');
+    let triggerHeight = window.innerHeight * 0.8; 
+
+    boxes.forEach(box => {
+        let boxTop = box.getBoundingClientRect().top;
+        let boxBottom = box.getBoundingClientRect().bottom;
+
+        if (boxTop < triggerHeight && boxBottom > 50) {
+            box.classList.add('show');
+        } else {
+            box.classList.remove('show');
+        }
+    }); 
+}
+
+window.addEventListener('scroll', revealOnScroll);
